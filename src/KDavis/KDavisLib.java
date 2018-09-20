@@ -1,3 +1,6 @@
+//Kye Davis
+//September 20, 2018
+
 package KDavis;
 
 public class KDavisLib
@@ -19,7 +22,35 @@ public class KDavisLib
         }
         return false;
     }
-    public static void foobarbaz(int numberofnumbers)
+    public static String cutOut(String mainstr, String substr)
     {
-        for(int i = 1; i <= numberofnumbers; i++)
+        int substrplace = mainstr.indexOf(substr);
+        if(substrplace < 0)
+        {
+            return "I can't find your substring in your mainstring!";
+        }
+        String firstshortstr = mainstr.substring(0,substrplace);
+        String nextshortstr = mainstr.substring(substrplace + substr.length());
+        return firstshortstr + nextshortstr;
+    }
+    public static void multiplicationTable(int base, int range) {
+        if (range <= 0) {
+            System.out.println("I can't do that!");
+        }
+        String table = "";
+        for (int i = 0; i <= range; i++)
+        {
+            table += i * base + ", ";
+        }
+        System.out.println(table);
+    }
+    public static int sumUpTo(int num)
+    {
+        int sumofall = 0
+        for (int i = 0; i <= num; i++)
+        {
+            sumofall + i;
+        }
+        return sumofall
+    }
 }
