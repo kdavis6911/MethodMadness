@@ -14,18 +14,18 @@ public class TestFile
         System.out.println(test);
 
         //test for cutOut
-        String test1 = cutOut("young thugga la flare", "la");
+        String test1 = cutOut("young thugga la flare", " la");
         System.out.println(test1);
 
         //test for multiplicationTable
-        multiplicationTable(8, 12);
+        multiplicationTable(7842, 51);
 
         //test for sumUpTo
-        int test2 = sumUpTo(24);
+        int test2 = sumUpTo(3892);
         System.out.println(test2);
 
         //test for leastCommonMultiple
-        int test3 = leastCommonMultiple(2,4,6);
+        int test3 = leastCommonMultiple(456,9086,65);
         System.out.println(test3);
     }
 }

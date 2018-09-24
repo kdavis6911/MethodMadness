@@ -86,10 +86,12 @@ public class KDavisLib
     }
     public static int leastCommonMultiple(int num1, int num2, int num3)
     {
-        for (int i = 0; i < 0; i++)
+        for (int i = num3; i <= num1*num2*num3; i++)
         {
-            if (i % num1 == 0 && i % num2 == 0 && i % num3 == 0);
-            return i;
+            if (i % num1 == 0 && i % num2 == 0 && i % num3 == 0)
+            {
+                return i;
+            }
         }
         return -1;
     }
